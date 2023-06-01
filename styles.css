@@ -1,0 +1,248 @@
+body {
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("./fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("./fonts/Lato-Regular.ttf");
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    width: 37%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.content-form {
+    background-color:#FBFBFB;
+    width: 63%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    margin-top: 58px;
+}
+
+.header i {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    padding-left: 100px;
+    cursor: pointer;
+}
+
+.header h3 {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+    font-family: "Lato-Regular";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header a {
+    text-decoration: none;
+    color: #009DDC;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.title h1 {
+    width: 40%;
+    font-size: 48px;
+    font-family: Lato-Bold;
+    font-weight: 700;
+    color: #242331;
+    margin-bottom: 58px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form-control input {
+    width: 40%;
+    padding: 20px 20px;
+    border: 1px solid #C5C5C5;
+    border-radius: 8px;
+    margin: 0px;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    font-weight: 500;
+    color: #979797;
+}
+
+.pass {
+    width: 39%;
+    display: flex;
+    justify-content: end;
+    font-family: "Lato-Regular";
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 38px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+.btn button {
+    background-color: #009DDC;
+    border-radius: 8px;
+    color: #FFF;
+    width: 43%;
+    height: 52px;
+    border: none;
+    font-family: "Lato-Regular";
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.linea {
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 28px;
+}
+
+.linea::before {
+    border-top: 2px solid #C5C5C5;
+    content: "";
+    margin: 0px auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    z-index: -1;
+}
+
+.linea span {
+    background-color: #FBFBFB;
+    padding: 0px 8px;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    font-weight: 500;
+    color:#A6A0A0;
+}
+
+.sign-in-google {
+    width: 43%;
+    border: 1px solid #C5C5C5;
+    background-color: #ffffff;
+    padding: 13px 0px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sign-in-google img {
+    margin-right: 9px;
+}
+
+.sign-in-google span {
+    font-family: 'Lato-Regular';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.img-movil {
+    display: none;
+}
+
+@media (max-width: 425px) {
+    .content {
+        display: none;
+        width: 0%;
+    }
+    .content-form {
+        width: 100%;
+    }
+    .img-movil {
+        display: block;
+    }
+    .img-movil img {
+        width: 100%;
+    }
+    .header {
+        margin-top: 10px;
+    }
+    .header img {
+        padding-left: 24px;
+    }
+    .header h3{
+        margin-right: 24px;
+        font-size: 14px;
+    }
+    .title h1{
+        width: 80%;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .form-control input {
+        width: 75%;
+        padding: 20px 20px;
+        border: 1px solid #C5C5C5;
+        border-radius: 8px;
+        margin: 0px;
+        font-family: 'Lato-Regular';
+        font-size: 16px;
+        font-weight: 500;
+        color: #979797;
+        height: 5px;
+    }
+
+    .pass {
+        margin-bottom: 30px;
+    }
+
+    .btn button {
+        background-color: #009DDC;
+        border-radius: 8px;
+        color: #FFF;
+        width: 82%;
+        height: 42px;
+        border: none;
+        font-family: "Lato-Regular";
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .linea::before {
+        width: 80%;
+    }
+
+    .sign-in-google {
+        width: 80%;
+        height: 42px;
+    }
+}
