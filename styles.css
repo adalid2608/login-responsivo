@@ -37,7 +37,7 @@ body {
 }
 
 .header i {
-    width: 50%;
+    width: 65%;
     display: flex;
     align-items: center;
 }
@@ -47,11 +47,8 @@ body {
     cursor: pointer;
 }
 
-.header h3 {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    margin-right: 100px;
+.header p {
+    margin-right: 8px;
     font-family: "Lato-Regular";
     font-size: 20px;
     font-weight: 500;
@@ -80,7 +77,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .form-control input {
     width: 40%;
@@ -198,9 +195,22 @@ body {
     .header img {
         padding-left: 24px;
     }
-    .header h3{
-        margin-right: 24px;
+    .header p {
+        margin-right: 8px;
+        font-family: "Lato-Regular";
         font-size: 14px;
+        font-weight: 500;
+    }
+
+    .header i {
+        width: 45%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .header a {
+        text-decoration: none;
+        color: #009DDC;
     }
     .title h1{
         width: 80%;
